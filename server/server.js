@@ -1,7 +1,7 @@
 'use strict';
 
 var mosca = require('mosca');
-var config = require('./../config.js').config;
+var config = require('./../config.js').config; // config.js icinde sadece parameterleri tutuyorsak js dosyasi yerine config.json yapip http://stackoverflow.com/a/14678694 surdaki gibi bir kullanimi tavsiye ederim
 
 class ServerManager {
     constructor() {
