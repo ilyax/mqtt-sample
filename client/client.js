@@ -11,7 +11,7 @@ class ClientManager {
      */
     constructor(host, ready) {
         util.log('initated...');
-        let mqtt = require('mqtt');
+        let mqtt = require('mqtt'); // teknik olarak burdaki kullanimi performans sorunu acar mi bilmiyorum ama okunus acisinda burda durmasini pek hos gorun muyor.
         this.host = host || config.MQTT_HOST
         
         this.events = {
